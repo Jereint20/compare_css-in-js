@@ -28,20 +28,18 @@ const Section = styled.section`
 
 const StyledComponents = () => {
     return (
-        <>
-            <Section>
-                <Rotate>
-                    &lt;{' '}
-                    <span role="img" aria-label="">
-                        💅🏾
-                    </span>{' '}
-                    &gt;
-                </Rotate>
-                <Button buttonType="primary">Primary</Button>
-                <Button buttonType="secondary">Secondary</Button>
-                <Button buttonType="tertiary">Tertiary</Button>
-            </Section>
-        </>
+        <Section>
+            <Rotate>
+                &lt;{' '}
+                <span role="img" aria-label="">
+                    💅🏾
+                </span>{' '}
+                &gt;
+            </Rotate>
+            <Button buttonType="primary">Primary</Button>
+            <Button buttonType="secondary">Secondary</Button>
+            <Button buttonType="tertiary">Tertiary</Button>
+        </Section>
     );
 };
 
