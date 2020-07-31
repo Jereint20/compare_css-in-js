@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import StyledComponents from './components/StyledComponents';
 import Emotion from './components/Emotion';
+import JSS from './components/JSS';
 
 function App() {
     return (
@@ -12,6 +13,8 @@ function App() {
             <StyledComponents />
             <p>Emotion</p>
             <Emotion />
+            <p>JSS</p>
+            <JSS />
         </div>
     );
 }
