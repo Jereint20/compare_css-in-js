@@ -13,10 +13,7 @@ const sectionCss = css`
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
-    /* border: 2px soild palevioletred; */
-    border-width: 2px;
-    border-style: solid;
-    border-color: palevioletred;
+    border: 2px solid hotpink;
     border-radius: 3px;
 
     @media (min-width: 400px) {
