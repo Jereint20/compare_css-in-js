@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 import { buttonStyle } from '../../css/common';
 
 interface ButtonProps {
-    buttonType: string;
+    buttonType: 'primary' | 'secondary' | 'tertiary';
     children: React.ReactNode;
     onClick?: (e?: React.MouseEvent<HTMLButtonElement>) => void;
 }
@@ -51,7 +51,6 @@ const themes = {
 const Button = styled.button`
     ${buttonStyle};
     ${(props: ButtonStyleProps) => {
-        console.log(props);
         return props.primary
             ? themes.primary
             : props.secondary

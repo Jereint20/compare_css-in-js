@@ -1,6 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import SlideRight from './Animation';
+import Flicker from './Animation';
+import Button from './Buttons';
 
 // Create your Styles. Remember, since React-JSS uses the default preset,
 // most plugins are available without further configuration needed.
@@ -15,7 +16,7 @@ const useStyles = createUseStyles({
         justifyContent: 'space-around',
         alignItems: 'center',
         alignContent: 'space-around',
-        border: '2px solid #f7df1e',
+        border: [2, 'solid', '#f7df1e'],
         borderRadius: 3,
 
         '@media (min-width: 400px)': {
@@ -29,7 +30,10 @@ const JSS = () => {
     const classes = useStyles();
     return (
         <section className={classes.sectionStyles}>
-            <SlideRight />
+            <Flicker />
+            <Button buttonType="primary">Primary</Button>
+            <Button buttonType="secondary">Secondary</Button>
+            <Button buttonType="tertiary">Tertiary</Button>
         </section>
     );
 };

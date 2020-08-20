@@ -2,20 +2,21 @@ import React from 'react';
 import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
-    '@keyframes slideRight': {
+    '@keyframes flicker': {
         from: { opacity: 0 },
         to: { opacity: 1 },
     },
 
     text: {
+        padding: [32, 16],
         display: 'inline-block',
-        animation: '$slideRight 1s ease-in-out infinite alternate',
+        animation: '$flicker 1s ease-in-out infinite alternate',
     },
 });
 
-const SlideRight = () => {
+const Flicker = () => {
     const classes = useStyles();
     return <div className={classes.text}>JSS</div>;
 };
 
-export default SlideRight;
+export default Flicker;
