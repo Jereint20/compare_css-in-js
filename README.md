@@ -1,12 +1,10 @@
 # Compare CSS-in-JS
 
-CSS-in-JS library 를 비교하기 위한 repo
+## Condition
 
-## 조건
-
-- github 에서 css-in-js Topic 검색
-  - star 5k 이상
-  - master | main last commit의 date 가 2020년 이후
+- github stars >= 5k
+- last publish year >= 2020
+- npm Weekly Download >= 500k
 
 ## Script
 
@@ -22,6 +20,4 @@ npm start
 - CSS-in-JS Library
   - @emotion/core
   - styled-components
-  - styled-jsx
   - jss
-  - linaria
